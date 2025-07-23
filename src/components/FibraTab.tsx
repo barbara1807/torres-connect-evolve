@@ -50,17 +50,22 @@ const FibraTab = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-secondary py-20">
+      <section 
+        className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/5e2b61ab-f8d0-4e44-8fc5-99732c2bccc5.png')`
+        }}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-accent/10 rounded-full mb-6">
               <Zap className="w-10 h-10 text-accent" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-arimo">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-arimo">
               Fibra Óptica
               <span className="text-accent"> Subterrânea</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 font-arimo max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 mb-8 font-arimo max-w-3xl mx-auto">
               Conectamos cidades, fazendas e empresas com a mais avançada tecnologia em 
               fibra óptica subterrânea. Infraestrutura robusta e segura para o futuro da comunicação.
             </p>

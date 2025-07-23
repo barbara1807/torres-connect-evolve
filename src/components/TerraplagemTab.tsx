@@ -74,17 +74,22 @@ const TerraplagemTab = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-secondary py-20">
+      <section 
+        className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/7ab0efa8-194f-488c-869c-d72b341a9cff.png')`
+        }}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-accent/10 rounded-full mb-6">
               <Mountain className="w-10 h-10 text-accent" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-arimo">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-arimo">
               Terraplanagem e
               <span className="text-accent"> Locação de Máquinas</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 font-arimo max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 mb-8 font-arimo max-w-3xl mx-auto">
               Soluções completas em terraplanagem e locação de máquinas pesadas. 
               Eficiência, segurança e economia para todos os tipos de obras.
             </p>

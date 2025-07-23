@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, MessageCircle, Award, Target, Eye } from "lucide-react";
+import inicioBg from "@/assets/inicio-bg.jpg";
 
 const InicioTab = () => {
   const handleWhatsAppClick = () => {
@@ -10,14 +11,19 @@ const InicioTab = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-secondary py-20">
+      <section 
+        className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${inicioBg}')`
+        }}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-arimo">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-arimo">
               Conectando o futuro com
               <span className="text-accent"> infraestrutura sólida</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 font-arimo max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 mb-8 font-arimo max-w-3xl mx-auto">
               Mais de 16 anos de experiência em soluções de fibra óptica subterrânea e terraplanagem.
               Uma empresa familiar comprometida com qualidade, segurança e inovação.
             </p>
