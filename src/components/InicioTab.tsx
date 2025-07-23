@@ -14,7 +14,7 @@ const InicioTab = () => {
       <section 
         className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${inicioBg}')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${inicioBg}')`
         }}
       >
         <div className="container mx-auto px-4">
@@ -23,7 +23,7 @@ const InicioTab = () => {
               Conectando o futuro com
               <span className="text-accent"> infraestrutura sólida</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-8 font-arimo max-w-3xl mx-auto">
+            <p className="text-xl text-white mb-8 font-arimo max-w-3xl mx-auto">
               Mais de 16 anos de experiência em soluções de fibra óptica subterrânea e terraplanagem.
               Uma empresa familiar comprometida com qualidade, segurança e inovação.
             </p>
@@ -37,9 +37,10 @@ const InicioTab = () => {
                 Falar no WhatsApp
               </Button>
               <Button
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="outline"
                 size="lg"
-                className="font-arimo font-medium"
+                className="font-arimo font-medium border-white text-white hover:bg-white hover:text-foreground"
               >
                 Conheça nossos serviços
               </Button>
@@ -49,7 +50,7 @@ const InicioTab = () => {
       </section>
 
       {/* About Section */}
-      <section className="container mx-auto px-4">
+      <section id="about" className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-arimo">
             Nossa História

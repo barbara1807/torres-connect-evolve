@@ -53,7 +53,7 @@ const FibraTab = () => {
       <section 
         className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/5e2b61ab-f8d0-4e44-8fc5-99732c2bccc5.png')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/5e2b61ab-f8d0-4e44-8fc5-99732c2bccc5.png')`
         }}
       >
         <div className="container mx-auto px-4">
@@ -65,24 +65,24 @@ const FibraTab = () => {
               Fibra Óptica
               <span className="text-accent"> Subterrânea</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-8 font-arimo max-w-3xl mx-auto">
+            <p className="text-xl text-white mb-8 font-arimo max-w-3xl mx-auto">
               Conectamos cidades, fazendas e empresas com a mais avançada tecnologia em 
               fibra óptica subterrânea. Infraestrutura robusta e segura para o futuro da comunicação.
             </p>
             <Button
-              onClick={handleWhatsAppClick}
+              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-arimo font-medium"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Solicitar Orçamento
+              Conhecer Diferenciais
             </Button>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4">
+      <section id="features" className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-arimo">
             Diferenciais da Nossa Fibra Óptica

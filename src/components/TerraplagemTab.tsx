@@ -84,7 +84,7 @@ const TerraplagemTab = () => {
       <section 
         className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/7ab0efa8-194f-488c-869c-d72b341a9cff.png')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/7ab0efa8-194f-488c-869c-d72b341a9cff.png')`
         }}
       >
         <div className="container mx-auto px-4">
@@ -96,24 +96,24 @@ const TerraplagemTab = () => {
               Terraplanagem e
               <span className="text-accent"> Locação de Máquinas</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-8 font-arimo max-w-3xl mx-auto">
+            <p className="text-xl text-white mb-8 font-arimo max-w-3xl mx-auto">
               Soluções completas em terraplanagem e locação de máquinas pesadas. 
               Eficiência, segurança e economia para todos os tipos de obras.
             </p>
             <Button
-              onClick={handleWhatsAppClick}
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-arimo font-medium"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Solicitar Orçamento
+              Ver Nossos Serviços
             </Button>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="container mx-auto px-4">
+      <section id="services" className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-arimo">
             Nossos Serviços
