@@ -27,15 +27,7 @@ const InicioTab = () => {
               Mais de 16 anos de experiência em soluções de fibra óptica subterrânea e terraplanagem.
               Uma empresa familiar comprometida com qualidade, segurança e inovação.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-arimo font-medium"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Falar no WhatsApp
-              </Button>
+            <div className="flex justify-center">
               <Button
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 size="lg"
