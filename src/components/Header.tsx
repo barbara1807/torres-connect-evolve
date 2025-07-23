@@ -13,7 +13,7 @@ const Header = ({ activeTab, setActiveTab }: HeaderProps) => {
   const tabs = [
     { id: "inicio", label: "Início" },
     { id: "fibra", label: "Fibra Óptica" },
-    { id: "terraplenagem", label: "Terraplenagem" },
+    { id: "terraplenagem", label: "Terraplanagem" },
   ];
 
   const handleWhatsAppClick = () => {
