@@ -19,9 +19,16 @@ const TerraplagemTab = () => {
   };
 
   const handleVideoClick = (equipmentName: string) => {
-    // Aqui você pode adicionar links específicos para vídeos de cada equipamento
-    // Por exemplo: window.open("https://youtube.com/watch?v=VIDEO_ID", "_blank");
-    console.log(`Vídeo do equipamento: ${equipmentName}`);
+    const videoLinks = {
+      "Retroescavadeira": "https://vm.tiktok.com/ZMS7dYAuc/",
+      "Minicarregadeira": "https://vm.tiktok.com/ZMS7en8WN/",
+      "Motoniveladora": "https://vm.tiktok.com/ZMS7eTt8A/"
+    };
+    
+    const link = videoLinks[equipmentName as keyof typeof videoLinks];
+    if (link) {
+      window.open(link, "_blank");
+    }
   };
 
   const services = [
