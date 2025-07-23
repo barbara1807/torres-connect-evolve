@@ -38,9 +38,8 @@ const InicioTab = () => {
               </Button>
               <Button
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                variant="outline"
                 size="lg"
-                className="font-arimo font-medium border-white text-white hover:bg-white hover:text-foreground"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground font-arimo font-medium"
               >
                 Conheça nossos serviços
               </Button>
