@@ -8,12 +8,19 @@ import {
   Mountain,
   Route,
   Shovel,
-  CheckCircle
+  CheckCircle,
+  Play
 } from "lucide-react";
 
 const TerraplagemTab = () => {
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/5517997444451", "_blank");
+  };
+
+  const handleVideoClick = (equipmentName: string) => {
+    // Aqui você pode adicionar links específicos para vídeos de cada equipamento
+    // Por exemplo: window.open("https://youtube.com/watch?v=VIDEO_ID", "_blank");
+    console.log(`Vídeo do equipamento: ${equipmentName}`);
   };
 
   const services = [
@@ -48,17 +55,17 @@ const TerraplagemTab = () => {
     {
       name: "Retroescavadeira",
       description: "Para escavações, carregamento e movimentação de materiais",
-      icon: <Truck className="w-12 h-12 text-accent" />
+      image: "/lovable-uploads/f479ef86-d4e9-4d5b-a743-6a3d1386bef1.png"
     },
     {
       name: "Minicarregadeira",
       description: "Ideal para trabalhos em espaços reduzidos e alta manobralidade",
-      icon: <Truck className="w-12 h-12 text-accent" />
+      image: "/lovable-uploads/63f700bd-d192-4102-bf53-d530cbc96344.png"
     },
     {
       name: "Motoniveladora",
       description: "Para nivelamento e acabamento fino de superfícies",
-      icon: <Truck className="w-12 h-12 text-accent" />
+      image: "/lovable-uploads/d032ee70-eb81-40e0-9699-53f8879745dc.png"
     }
   ];
 
@@ -138,17 +145,32 @@ const TerraplagemTab = () => {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {equipment.map((item, index) => (
-                <Card key={index} className="border-none shadow-xl">
-                  <CardHeader className="text-center">
-                    <div className="flex justify-center mb-4">
-                      {item.icon}
+                <Card key={index} className="border-none shadow-xl overflow-hidden">
+                  <CardHeader className="text-center p-0">
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={item.image} 
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/20" />
                     </div>
-                    <CardTitle className="text-xl font-arimo">{item.name}</CardTitle>
+                    <div className="p-6">
+                      <CardTitle className="text-xl font-arimo">{item.name}</CardTitle>
+                    </div>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground font-arimo text-center">
+                  <CardContent className="px-6 pb-6">
+                    <p className="text-muted-foreground font-arimo text-center mb-4">
                       {item.description}
                     </p>
+                    <Button
+                      onClick={() => handleVideoClick(item.name)}
+                      variant="outline"
+                      className="w-full font-arimo"
+                    >
+                      <Play className="w-4 h-4 mr-2" />
+                      Ver em Ação
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
