@@ -14,7 +14,7 @@ const InicioTab = () => {
       <section 
         className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${inicioBg}')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${inicioBg}')`
         }}
       >
         <div className="container mx-auto px-4">

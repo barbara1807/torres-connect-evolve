@@ -53,7 +53,7 @@ const FibraTab = () => {
       <section 
         className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/5e2b61ab-f8d0-4e44-8fc5-99732c2bccc5.png')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/5e2b61ab-f8d0-4e44-8fc5-99732c2bccc5.png')`
         }}
       >
         <div className="container mx-auto px-4">
