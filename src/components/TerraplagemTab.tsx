@@ -84,7 +84,7 @@ const TerraplagemTab = () => {
       <section 
         className="bg-gradient-to-br from-background to-secondary py-20 bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/7ab0efa8-194f-488c-869c-d72b341a9cff.png')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/lovable-uploads/7ab0efa8-194f-488c-869c-d72b341a9cff.png')`
         }}
       >
         <div className="container mx-auto px-4">
