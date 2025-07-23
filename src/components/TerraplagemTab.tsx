@@ -9,7 +9,8 @@ import {
   Route,
   Shovel,
   CheckCircle,
-  Play
+  Play,
+  Sprout
 } from "lucide-react";
 
 const TerraplagemTab = () => {
@@ -30,7 +31,7 @@ const TerraplagemTab = () => {
       description: "Movimentação de terra para preparação de terrenos e nivelamento"
     },
     {
-      icon: <Shovel className="w-8 h-8 text-accent" />,
+      icon: <Sprout className="w-8 h-8 text-accent" />,
       title: "Limpeza de Terreno",
       description: "Remoção de vegetação e detritos para preparação do solo"
     },
