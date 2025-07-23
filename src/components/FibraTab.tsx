@@ -9,7 +9,6 @@ import {
   Building2,
   CheckCircle
 } from "lucide-react";
-import fibraBackground from "@/assets/fibra-bg.jpg";
 
 const FibraTab = () => {
   const handleWhatsAppClick = () => {
@@ -51,12 +50,8 @@ const FibraTab = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section 
-        className="relative py-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${fibraBackground})` }}
-      >
-        <div className="absolute inset-0 bg-background/90"></div>
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="bg-gradient-to-br from-background to-secondary py-20">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-accent/10 rounded-full mb-6">
               <Zap className="w-10 h-10 text-accent" />
