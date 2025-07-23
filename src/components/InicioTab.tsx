@@ -29,7 +29,7 @@ const InicioTab = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                onClick={handleWhatsAppClick}
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-arimo font-medium"
               >
@@ -122,7 +122,7 @@ const InicioTab = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="container mx-auto px-4">
+      <section id="contact" className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 font-arimo">
             Entre em Contato
