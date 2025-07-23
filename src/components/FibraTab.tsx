@@ -63,7 +63,7 @@ const FibraTab = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-arimo">
               Fibra Óptica
-              <span className="text-accent"> Subterrânea</span>
+              <span className="text-white"> Subterrânea</span>
             </h1>
             <p className="text-xl text-white mb-8 font-arimo max-w-3xl mx-auto">
               Conectamos cidades, fazendas e empresas com a mais avançada tecnologia em 

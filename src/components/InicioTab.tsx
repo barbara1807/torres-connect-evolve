@@ -21,7 +21,7 @@ const InicioTab = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-arimo">
               Conectando o futuro com
-              <span className="text-accent"> infraestrutura sólida</span>
+              <span className="text-white"> infraestrutura sólida</span>
             </h1>
             <p className="text-xl text-white mb-8 font-arimo max-w-3xl mx-auto">
               Mais de 16 anos de experiência em soluções de fibra óptica subterrânea e terraplanagem.
