@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, MessageCircle, Award, Target, Eye } from "lucide-react";
+import inicioBackground from "@/assets/inicio-bg.jpg";
 
 const InicioTab = () => {
   const handleWhatsAppClick = () => {
@@ -10,8 +11,12 @@ const InicioTab = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-secondary py-20">
-        <div className="container mx-auto px-4">
+      <section 
+        className="relative py-20 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${inicioBackground})` }}
+      >
+        <div className="absolute inset-0 bg-background/85"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-arimo">
               Conectando o futuro com
