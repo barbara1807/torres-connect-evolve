@@ -102,7 +102,7 @@ const TerraplagemTab = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-arimo">
               Terraplanagem e
-              <span className="text-white"> Locação de Máquinas</span>
+              <span className="text-white"> de Locação Máquinas</span>
             </h1>
             <p className="text-xl text-white mb-8 font-arimo max-w-3xl mx-auto">
               Soluções completas em terraplanagem e locação de máquinas pesadas. 
